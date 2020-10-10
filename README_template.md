@@ -29,14 +29,17 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+### Schreenshot demo
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+![screenshot](button-components/screenshot.png)
 
--   Where can I see your demo?
--   What was your experience?
--   What have you learned/improved?
--   Your wisdom? :)
+This react button is an implementation of recent lesson about react. The screenshot above is the demo of my work. To get them all work, I used some conditional rendering (if statments). They all have almost similar properties but they also have uncommon properties. How the conditions work is that by comparing the value of every single propertie to it. If that is true, give a specific className to it and style it in the css.   
+
+I tried to just use the same property to each one of the buttons with different values. I put the value of the property as a className and style it in the css. It worked but without any conditions. I like the idea of using condition so I utilized it istead. 
+
+I couldn't get the icoStart and iconEnd work wery well. It is because I couldn't convert the fill, and stroke properties of Local_grocery_store svg image. I used svg icons from heroicons.dev to in order to get my work accomplished.
+
+It was a great challenge  🙂 ! 
 
 ### Built With
 
@@ -72,4 +75,4 @@ $ npm start
 ## Contact
 
 -   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
+-   GitHub [@Fodilahy-mena](https://github.com/Fodilahy-mena)
