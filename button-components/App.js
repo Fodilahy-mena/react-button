@@ -4,7 +4,7 @@ import Button from './Button'
 function App() {
     
     return (
-        <div>
+        <div style={{position: 'relative', bottom: '1rem'}}>
             <h1>Buttons</h1>
             <div className="first-components">
                 <Button
@@ -14,7 +14,7 @@ function App() {
                 />
                 <Button
                     textContent= "Default" 
-                    elementExample= "<Button &:hover, &:focus/>"
+                    elementExample= "<Button variant='outline' &:hover, &:focus/>"
                     variant= 'outline'
                 />
                 <Button
@@ -91,6 +91,15 @@ function App() {
                         elementExample= "<Button &:hover, &:focus/>"
                         color='danger'
                     />
+                </div>
+                <div style={{marginBlockStart: '2rem'}}>
+                    <Button 
+                            textContent= "Default" 
+                            elementExample= "<Button size='lg' variant='outline' disableShadow &:hover, &:focus/>"
+                            size= 'lg'
+                            variant='outline'
+                            disableShadow
+                        />
                 </div>
         </div>
         )

@@ -64,6 +64,10 @@ function Button(props) {
     if(props.color === 'danger') {
         nameOfClass = 'button danger'
     }
+
+    if(props.variant === 'outline' && props.disableShadow && props.size === 'lg') {
+        nameOfClass = 'button lgOutlineDisaShadow'
+    }
     return (
     <div>
         <span>{props.elementExample}</span><br/>

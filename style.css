@@ -1,5 +1,7 @@
 body {
     font-family: Poppins;
+    max-width: 100%;
+    min-width: 100%;
 }
 .first-components {
     display: grid;
@@ -82,9 +84,8 @@ body {
 /* 3rd compon */
 
 .third-components {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    display: flex;
+    justify-content: space-between;
     margin-top: 2rem;
 }
 
@@ -184,4 +185,25 @@ body {
 .danger:hover, .danger:focus {
     background: #9A0007;
     box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+}
+
+.lgOutlineDisaShadow {
+    width: 93px;
+    height: 42px;
+    animation: clmove 1s infinite;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+@keyframes clmove {
+    0%     {color: #FFFFFF; background: #2962FF;}
+    50.0%  {background-color: white; color: #3D5AFE; border: blue solid 2px;}
+    100.0% {color: #FFFFFF; background: #3D5AFE;}
+  }
+
+.lgOutlineDisaShadow:hover, .lgOutlineDisaShadow:focus {
+    animation: unset;
+    color: #3D5AFE;
+    border: blue solid 2px;
+    background-color: rgba(41, 98, 255, 0.1);
 }
