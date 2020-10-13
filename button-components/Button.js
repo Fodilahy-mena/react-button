@@ -31,7 +31,7 @@ function Button(props) {
     }
 
     if(props.variant === "text" && props.disable) {
-        nameOfClass = 'button textDisable'
+        nameOfClass = 'button textDisable textHover'
     }
 
     if(props.startIcon) {
